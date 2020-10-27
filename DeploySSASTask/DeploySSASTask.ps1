@@ -71,7 +71,9 @@ try {
 		2014 {$compiler = "C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
 		2016 {$compiler = "C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
 		2017 {$compiler = "C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
+		2019 {$compiler = "C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
 		"auto" {
+			if (Test-Path("C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe")) { $compiler = "C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
 			if (Test-Path("C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe")) { $compiler = "C:\Program Files (x86)\Microsoft SQL Server\140\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
 			if (Test-Path("C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe")) { $compiler = "C:\Program Files (x86)\Microsoft SQL Server\130\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
 			if (Test-Path("C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe")) { $compiler = "C:\Program Files (x86)\Microsoft SQL Server\120\Tools\Binn\ManagementStudio\Microsoft.AnalysisServices.Deployment.exe"}
